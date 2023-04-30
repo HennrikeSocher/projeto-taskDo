@@ -1,2 +1,2 @@
 # projetoTaskDo
-Projeto para a avaliacao de topicos e sistemas da informacao. (Sistema de registro de usuarios e tasks)
+Projeto para a avaliacao de topicos e sistemas da informação. (Sistema de registro de usuarios e tasks)

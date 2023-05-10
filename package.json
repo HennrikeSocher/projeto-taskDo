@@ -4,7 +4,7 @@
   "description": "Projeto para a avaliacao de topicos e sistemas da informacao. (Sistema de registro de usuarios e tasks)\r > Projeto: Em construcao!\r ```",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
   "homepage": "https://github.com/HennrikeSocher/projeto-taskDo#readme",
   "devDependencies": {
     "@types/express": "^4.17.17",
+    "prisma": "^4.14.0",
     "tsx": "^3.12.7",
     "typescript": "^5.0.4"
   },

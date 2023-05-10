@@ -9,5 +9,5 @@ app.use(router);
 
 app.listen(PORT, () => {
   console.clear();
-  console.log(`HTTP server running on port ${PORT}`);
+  console.log(`HTTP server running on port ${PORT} 🚀`);
 });

@@ -1,13 +1,15 @@
+
 import express from "express";
-import { routes } from "./routes";
+import { router } from "./routes/index";
 
 const app = express();
 const PORT = process.env.PORT || 3333;
 
 app.use(express.json());
-app.use(routes);
+app.use(router);
+
+
 
 app.listen(PORT, () => {
-  console.clear();
   console.log(`HTTP server running on port ${PORT} 🚀`);
 });

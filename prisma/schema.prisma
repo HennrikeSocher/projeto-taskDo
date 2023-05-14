@@ -23,7 +23,6 @@ model Task {
   description  String
   user_id      String
   user         User     @relation(fields: [user_id], references: [id])
-  release_date DateTime
-
+  create_at DateTime @default(now())
   @@map("tarefas")
 }

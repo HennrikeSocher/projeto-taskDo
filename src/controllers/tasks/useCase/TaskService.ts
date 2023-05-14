@@ -6,13 +6,14 @@ import { AppError } from "../../../errors/AppError";
 
 export class TaskService {
   async createTask(data: CreateTaskDTO): Promise<Task> {
-    const { title, description, user_id, } = data;
+    const { title, description, user_id, completed } = data;
 
     const task = await prisma.task.create({
       data: {
         title,
         description,
         user_id, 
+        completed,
       },
     });
 
@@ -34,7 +35,7 @@ export class TaskService {
   }
 
   async updateTask(id: string, data: UpdateTaskDTO): Promise<Task> {
-    const { title, description } = data;
+    const { title, description, completed} = data;
 
     const task = await prisma.task.update({
       where: {
@@ -43,6 +44,7 @@ export class TaskService {
       data: {
         title,
         description,
+        completed,
       },
     });
 

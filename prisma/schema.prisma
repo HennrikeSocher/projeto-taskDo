@@ -24,5 +24,7 @@ model Task {
   user_id      String
   user         User     @relation(fields: [user_id], references: [id])
   create_at DateTime @default(now())
+  completed Boolean
+
   @@map("tarefas")
 }
